@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма регистрации</title>
+    <style>
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <form id="registrationForm">
+        <label for="firstName">Имя:</label>
+        <input type="text" id="firstName" name="firstName"><br>
+
+        <label for="lastName">Фамилия:</label>
+        <input type="text" id="lastName" name="lastName"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="dob">Дата рождения:</label>
+        <input type="date" id="dob" name="dob"><br>
+
+        <label for="gender">Пол:</label>
+        <select id="gender" name="gender">
+            <option value="">Выберите...</option>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+        </select><br>
+
+        <label>Технологии:</label><br>
+        <input type="checkbox" name="technologies" value="HTML"> HTML<br>
+        <input type="checkbox" name="technologies" value="CSS"> CSS<br>
+        <input type="checkbox" name="technologies" value="JavaScript"> JavaScript<br>
+        <input type="checkbox" name="technologies" value="Python"> Python<br>
+        <input type="checkbox" name="technologies" value="Java"> Java<br>
+        <input type="checkbox" name="technologies" value="C++"> C++<br>
+
+        <button type="submit">Регистрация</button>
+
+    </form>
+
+    <div id="errorMessages" class="error"></div>
+
+    <script src="js.js"></script>
+
+</body>
+</html>
